@@ -1,0 +1,257 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Import for PT Serif and Roboto */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables for Color Scheme */
+:root {
+    --gray-dark: #5a5a5aba;
+    --gray-light: #e5e5e5;
+    --text-color: #0c0c0c;
+    --font-primary: 'PT Serif', serif;
+}
+
+/* Body Styling (Roboto font for regular content) */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for body text */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--gray-light);
+}
+
+/* Apply PT Serif to all headings (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Serif', serif; /* PT Serif font for all headings */
+}
+
+/* Header Section with Gray Gradient */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--gray-dark), var(--gray-light));
+    color: var(--text-color);
+}
+
+/* Increase the font size of 'NAZMEEN KHAN' specifically */
+header h1 {
+    font-family: 'PT Serif', serif; /* Use PT Serif for the heading */
+    font-size: 4rem; /* Adjust the font size (you can increase or decrease as per your preference) */
+    font-weight: bold;
+    color: #2a2929;
+}
+
+/* Styling for the paragraph below the header */
+header p {
+    font-family: 'Roboto', sans-serif; /* Roboto font for paragraph */
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
+/* Section Title Styling */
+h2 {
+    margin: 1.5rem 0; /* Increased margin for better spacing */
+    text-align: center;
+    font-size: 2.4rem; /* Increased font size for headings */
+    font-weight: 700; /* Bold font weight for headings */
+    color: var(--gray-dark);
+}
+
+/* About Section with Gray Gradient */
+#about {
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(135deg,  var(--gray-light), var(--gray-dark));
+}
+
+#about img {
+    width: 200px;
+    border-radius: 10%;
+    border: 3px solid var(--gray-dark);
+    margin-bottom: 2rem;
+}
+
+#about p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#about h2{
+    font-size: 3rem;
+    color: #414040;
+}
+
+/* Skills Section with Gray Gradient */
+#skills {
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--gray-dark), var(--gray-light));
+}
+
+/* Styling for the skills list */
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#skills h2{
+    color: #414040;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+/* Styling for each skill box */
+#skills ul li {
+    background-color: rgba(109, 107, 107, 0.838);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    color: var(--gray-light);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-shadow: 0 4px 8px rgba(82, 82, 82, 0.1);
+}
+
+/* Hover effect for skill boxes */
+#skills ul li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: var(--gray-light); /* Darken background on hover */
+    color: #414040; /* Change text color to white on hover */
+}
+
+/* Projects Section Container */
+#projects-section {
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--gray-light), var(--gray-dark));
+    color: #333;
+    text-align: center;
+}
+
+/* Projects Section Heading */
+#projects-section h2 {
+    font-size: 3rem; /* Matches increased heading size */
+    margin-bottom: 1rem;
+    color: #414040;
+}
+
+/* Projects Section with Grid Layout */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 1.5rem 3rem;
+}
+
+/* Individual Project Card Styling */
+.project {
+    background: rgb(184, 181, 181);
+    border: 2px solid #060606;
+    border-radius: 20px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(11, 11, 11, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Project Image Styling */
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Hover Effect for Project Card */
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Resume Section with Gray Gradient */
+#resume {
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--gray-dark), var(--gray-light));
+}
+
+#resume h2{
+    font-size: 3rem;
+    color: #414040;
+}
+
+#resume p{
+    font-size: 1.2rem;
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: rgb(135, 133, 133);
+    color: rgb(45, 45, 45);
+    padding: 0.8rem 3rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.resume-link:hover {
+    background-color: var(--gray-light);
+}
+
+/* Contact Section with Gray Gradient */
+#contact {
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--gray-light), var(--gray-dark));
+}
+
+#contact h2{
+    font-size: 3rem;
+    color: #414040;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact p{
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Footer Section with Gray Gradient */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    background: linear-gradient(135deg, var(--gray-dark), var(--gray-light));
+}
+
+
+/* Section Padding */
+section {
+    padding: 3rem 0;
+}
