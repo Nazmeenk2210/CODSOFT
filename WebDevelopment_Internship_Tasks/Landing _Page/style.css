@@ -1,0 +1,183 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #429848d8; /* Darker shade of blue */
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    font-size: 35px; /* Increased font size */
+    text-align: center; /* Centered text */
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #b7ff00; /* Lighter shade of blue */
+  }
+  
+  /* Hero Section with Background Image */
+  #hero {
+    padding: 50px 30px;
+    text-align: center;
+    background-color: rgba(175, 218, 136, 0.7); /* Darker background for better contrast */
+    color: rgb(0, 0, 0); /* Text color changed to white */
+  }
+  
+  #hero p {
+    font-size: 18px; /* Increased font size */
+    line-height: 2; /* Improved readability */
+  }
+  
+  #hero h3 {
+    font-size: 25px; /* Increased font size */
+    margin: 20px 10px; /* Added spacing */
+  }
+
+  #hero-participate p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  /* Highlights Section Icons */
+  #highlights {
+    background-color: rgba(149, 181, 122, 0.835); /* Lighter shade of background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #highlights h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .highlights-list {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .highlights-list li {
+    margin: 15px 20px; /* Increased spacing */
+    text-align: center; /* Centered text */
+    width: 30%; /* Responsive width for each list item */
+    font-weight: bold;
+  }
+  
+  .highlight-icon {
+    width: 50px;
+    height: 50px; /* Increased icon size */
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Schedule Section Styling */
+  #schedule {
+    padding: 20px 20px;
+    background-color: rgba(185, 210, 165, 0.967); /* Lighter shade of background */
+  }
+
+  #schedule h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .schedule-item {
+    background-color: rgba(138, 175, 106, 0.967);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+  }
+
+  /* Register Section Styling */
+  #register {
+    background-color: rgba(147, 173, 127, 0.967);
+    text-align: center;
+    padding: 20px;
+  }
+
+  #register h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #register p {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  #register form input{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  #register form button{
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: rgba(199, 222, 181, 0.967);
+    text-align: center;
+    padding: 20px;
+  }
+
+  #contact h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #contact p {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  #footer {
+    background-color:rgba(97, 140, 64, 0.967) ;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
