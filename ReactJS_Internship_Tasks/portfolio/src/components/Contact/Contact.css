@@ -1,0 +1,79 @@
+/* components/Contact/Contact.css */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  min-height: 100vh; /* Ensure it takes the full height of the page */
+  padding: 20px;
+  background: linear-gradient(120deg, #b3ddf1, #3faad0); /* Updated to match About/Projects theme */
+  border-radius: 20px;
+}
+
+.contact h2 {
+  font-size: 3.5em;
+  color: #051d47; /* Consistent color with About and Projects section */
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  max-width: 100%; /* Limit the form width */
+  margin: 10px auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex: 0 0 15%; /* Label takes up 30% width */
+  font-weight: bold;
+  margin-right: 10px; /* Add space between label and input */
+  color: #333;
+  font-size: 1.5em;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1; /* Input fields take the remaining space */
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #7e7d7d;
+  font-size: 1.1em; /* Slightly larger font size for input fields */
+}
+
+.form-group textarea {
+  min-height: 100px; /* Set a height for the message textarea */
+}
+
+button {
+  width: 10%;
+  padding: 20px;
+  background-color: #197dc9; /* Consistent button color across sections */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #6092c4; /* Darker blue on hover to match consistency */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Disable button color */
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #cccccc;
+}
